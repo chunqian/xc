@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package xc
+package xc // import "modernc.org/xc"
 
 import (
 	"bytes"
@@ -14,7 +14,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/cznic/mathutil"
+	"modernc.org/mathutil"
 )
 
 func caller(s string, va ...interface{}) {

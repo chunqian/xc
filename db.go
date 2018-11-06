@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package xc
+package xc // import "modernc.org/xc"
 
 import (
 	"encoding/binary"
 	"sync"
 
-	"github.com/cznic/mathutil"
+	"modernc.org/mathutil"
 )
 
 const (
@@ -46,7 +46,7 @@ func (d *MemDB) Bytes(id int) []byte {
 	}
 
 	if id < 257 {
-		return d.b256[id-1 : id:id]
+		return d.b256[id-1 : id : id]
 	}
 
 	id -= 257
@@ -72,7 +72,7 @@ func (d *MemDB) bytesUnlocked(id int) []byte {
 	}
 
 	if id < 257 {
-		return d.b256[id-1 : id:id]
+		return d.b256[id-1 : id : id]
 	}
 
 	id -= 257

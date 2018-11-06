@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // Package xc provides cross language compiler support/utility stuff.
-package xc
+package xc // import "modernc.org/xc"
 
 import (
 	"fmt"
@@ -16,8 +16,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/cznic/golex/lex"
-	"github.com/cznic/strutil"
+	"modernc.org/golex/lex"
+	"modernc.org/strutil"
 )
 
 var (
